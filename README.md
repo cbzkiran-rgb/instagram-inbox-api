@@ -19,7 +19,7 @@ fetch('http://localhost:3000/register', {
     'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json'
   },
-  body: JSON.stringify({user:'TheUser',pass:'ThePassword'})
+  body: JSON.stringify({user:'sanjusebastine',pass:'ThePassword'})
 }).then(res=>res.json())
   .then(res => console.log(res));
 ```
@@ -34,7 +34,7 @@ fetch('http://localhost:3000/register', {
       {
         "accounts": [
           {
-            "username": "y4g4m1",
+            "username": "sanjusebastine",
             "picture": "http://scontent-yyz1-1.cdninstagram.com/t51.2885-19/11248742_933430356713730_1934006097_a.jpg",
             "fullName": "Yohan McDonald",
             "id": 559838015,
@@ -57,7 +57,7 @@ fetch('http://localhost:3000/register', {
       {
         "accounts": [
           {
-            "username": "axelleokok",
+            "username": "sanjusebastine",
             "picture": "http://scontent-yyz1-1.cdninstagram.com/t51.2885-19/s150x150/13259602_580319558808270_355488729_a.jpg",
             "fullName": "Axelle Air",
             "id": 43672695,
@@ -81,7 +81,7 @@ fetch('http://localhost:3000/register', {
     ],
     "user": {
       "id": "51027825",
-      "name": "elyx0"
+      "name": "sanjusebastine"
     }
   }
 }
@@ -90,7 +90,7 @@ fetch('http://localhost:3000/register', {
 #### 2)  Use the token, username and get feeds
 Method | Endpoint  | Query Parameters
 ------------ | ------------- | -------------
-POST | /read/:id | `{"user":"[user.nameFromPreviousCall]","token":"[tokenFromPreviousCall]"}`
+POST | /read/:id | `{"user":"[user.sanjusebastine]","token":"[tokenFromPreviousCall]"}`
 
 You will need the feed id of the conversation you want to retrieve for ex `data.feeds[0].id`
  (340282366841710300949128130393065336903) in my example
@@ -104,7 +104,7 @@ You will need the feed id of the conversation you want to retrieve for ex `data.
      'Accept': 'application/json, text/plain, */*',
      'Content-Type': 'application/json'
    },
-   body: JSON.stringify({user:'TheUser',token:'theTokenFromStep1'})
+   body: JSON.stringify({user:'sanjusebastine',token:'theTokenFromStep1'})
  }).then(res=>res.json())
    .then(res => console.log(res));
  ```
@@ -147,7 +147,7 @@ You will need the feed id of the conversation you want to retrieve for ex `data.
 #### Logging out
 Method | Endpoint  | Query Parameters
 ------------ | ------------- | -------------
-POST | /logout | `{"user":"[user.nameFromInitialCall]","token":"[tokenFromInitialCall]"}`
+POST | /logout | `{"user":"[user.sanjusebastine]","token":"[tokenFromInitialCall]"}`
 
  #### Request
  Eg: From your frontend or else.
@@ -158,7 +158,7 @@ POST | /logout | `{"user":"[user.nameFromInitialCall]","token":"[tokenFromInitia
      'Accept': 'application/json, text/plain, */*',
      'Content-Type': 'application/json'
    },
-   body: JSON.stringify({user:'TheUser',token:'theTokenFromStep1'})
+   body: JSON.stringify({user:'sanjusebastine',token:'theTokenFromStep1'})
  }).then(res=>res.json())
    .then(res => console.log(res));
  ```
